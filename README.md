@@ -7,9 +7,6 @@ Welcome to my GitHub repository! Here you will find a collection of programming 
 - [Introduction](#introduction)
 - [Problem List](#problem-list)
 - [Testing Your Solutions](#testing-your-solutions)
-- [Notes](#notes)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 

@@ -2,6 +2,20 @@
 #Código 8957833
 #Fecha 8-02-2023
 
+# Task Description
+"""
+Before bridges were common, ferries were used to transport cars across rivers. River ferries, unlike their larger cousins, run
+on a guide line and are powered by the river’s current. Cars drive onto the ferry from one end, the ferry crosses the river,
+and the cars exit from the other end of the ferry.
+There is a ferry across the river that can take n cars across the river in t minutes and return in t minutes. A car may arrive at
+either river bank to be transported by the ferry to the opposite bank. The ferry travels continuously back and forth between
+the banks so long it is carrying a car or there is at least one car waiting at either bank. Whenever the ferry arrives at one
+of the banks it unloads its cargo and loads up to n cars that are waiting to cross. If there are more than n, those that have
+been waiting the longest are loaded. If there are no cars waiting on either bank, the ferry waits until one arrives, loads it
+(if it arrives on the same bank of the ferry), and crosses the river. At what time does each car reach the other side of the
+river?
+"""
+
 # Input
 """
 The first line of input contains c, the number of test cases. Each test case begins with n, t, m. Then m lines follow, each

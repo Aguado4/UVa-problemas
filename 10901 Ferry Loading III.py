@@ -2,6 +2,20 @@
 #Código 8957833
 #Fecha 8-02-2023
 
+# Input
+"""
+The first line of input contains c, the number of test cases. Each test case begins with n, t, m. Then m lines follow, each
+giving the arrival time for a car (in minutes since the beginning of the day), and the bank at which the car arrives ('left' or
+'right').
+"""
+
+# Output
+"""
+For each test case, output one line per car, in the same order as the input, giving the time at which that car is unloaded at the
+opposite bank. Output an empty line between cases.
+You may assume that 0 < n, t, m ≤ 10 000. The arrival times for each test case are strictly
+"""
+
 from heapq import heappush, heapify, heappop
 from collections import deque
 

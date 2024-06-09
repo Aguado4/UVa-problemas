@@ -1,5 +1,5 @@
 # Name: Juan José Aguado
-#This was mi first programming problem so it may not pass UVa online judge tests or similar tests
+#This was my first programming problem so it may not pass UVa online judge tests or similar tests
 # November 27, 2020
 # Problem: https://onlinejudge.org/external/1/139.pdf Telephone Tangles
 # Input: It has 2 parts; the first one is a set of data consisting of

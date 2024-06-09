@@ -2,6 +2,23 @@
 #Código 8957833
 #Fecha 17-04-2023
 #This is the link for the problem description: http://poj.org/problem?id=1011
+
+"""
+George took sticks of the same length and cut them randomly until all parts became at most 50 units long. 
+Now he wants to return sticks to the original state, but he forgot how many sticks he had originally and how long they were originally. 
+Please help him and design a program which computes the smallest possible original length of those sticks. 
+All lengths expressed in units are integers greater than zero.
+
+Input
+The input file contains blocks of 2 lines. 
+The first line contains the number of sticks parts after cutting. 
+The second line contains the lengths of those parts separated by the space. 
+The last line of the file contains ‘0’.
+
+Output
+The output file contains the smallest possible length of original sticks, one per line.
+"""
+
 cond = False
 def check(part,actsum,i,usa,ind,indos,numpal,tot):
     global cond

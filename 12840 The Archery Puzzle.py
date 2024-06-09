@@ -14,7 +14,6 @@ then choose one in which the second arrow scores the highest score possible, and
 Input:
 Input starts with a positive integer T, that denotes the number of test cases. Each test case starts with two integers in a single line: N and S. 
 The second line for each test case contains N integers in ascending order: P1, P2, ..., PN. You can assume: 1 ≤ N ≤ 50 and 1 ≤ P1 < P2 < P3 < ... < PN ≤ S ≤ 300.
-The input must be read from standard input.
 
 Output:
 For each test case, print the case number, followed by the minimum number of arrows required to score S points between square brackets and then the sequence of points for each arrow, in descending order. 

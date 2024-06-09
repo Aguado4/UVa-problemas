@@ -1,6 +1,19 @@
 #Juan José Aguado
 #Código 8957833
 #Fecha 3-02-2023
+
+# Task Description
+"""
+Queues and Priority Queues are data structures which are known to most computer scientists. The Team Queue, however, is
+not so well known, though it occurs often in everyday life. At lunch time the queue in front of the Mensa is a team queue,
+for example.
+In a team queue each element belongs to a team. If an element enters the queue, it first searches the queue from head to tail
+to check if some of its teammates (elements of the same team) are already in the queue. If yes, it enters the queue right
+behind them. If not, it enters the queue at the tail and becomes the new last element (bad luck). Dequeuing is done like in
+normal queues: elements are processed from head to tail in the order they appear in the team queue.
+Your task is to write a program that simulates such a team queue.
+"""
+
 # Input
 """
 The input file will contain one or more test cases. Each test case begins with the number of teams t (1 ≤ t ≤ 1 000). Then t
@@ -13,7 +26,6 @@ Finally, a list of commands follows. There are three different kinds of commands
 The input will be terminated by a value of 0 for t.
 Warning: A test case may contain up to 200 000 (two hundred thousand) commands, so the implementation of the team
 queue should be efficient: both enqueing and dequeuing of an element should only take constant time.
-The input must be read from standard input.
 """
 
 # Output
@@ -21,7 +33,6 @@ The input must be read from standard input.
 For each test case, first print a line saying ‘Scenario #k’, where k is the number of the test case. Then, for each ‘DEQUEUE’
 command, print the element which is dequeued on a single line. Print a blank line after each test case, even after the last
 one.
-The output must be written to standard output.
 """
 
 from collections import deque 

@@ -2,9 +2,19 @@
 #Código 8957833
 #Fecha 6-02-2023
 
-from heapq import heappush, heapify, heappop
-from sys import stdin
-import math
+# Task Description
+"""
+In a modest orchestra, a big part of the budget goes when buying scores. If each musician had their own copy, the number
+could go over 100.
+Fortunately, musicians that are playing the same instrument can sit together and share a music stand. That’s a major saving,
+but if it is used too much, it can provoke an ugly effect in the concert hall. After all, seeing a lot of musicians in a crowd
+behind a stand is not very esthetic.
+The section of economic affairs of the orchestra has informed us of the number of scores we can buy for the next concert.
+Keeping in mind the number of musicians that play each of the instruments, which stand will be the most concurred?
+For example, if we have 8 violins, 5 violas, 5 cellos, and 2 contrabasses and there is enough budget for 6 scores, we can buy
+two stands for violins, two for violas, one for cellos and a final one for contrabasses. In this case, the most crowded stand
+will be the one from the cellos, with 5 musicians behind it.
+"""
 
 # Input
 """
@@ -21,6 +31,10 @@ For each test case, write a single integer indicating the number of musicians th
 meeting the orchestra and budget restrictions. Don’t forget that the objective is to minimize the amount of people in the
 most crowded stand.
 """
+
+from heapq import heappush, heapify, heappop
+from sys import stdin
+import math
 
 def eje(partituras, lista):
     partituras -= len(lista)#las partituras "extra"

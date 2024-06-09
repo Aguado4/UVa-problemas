@@ -2,6 +2,28 @@
 #Código 8957833
 #Fecha 2-03-2023
 
+# Task Description
+"""
+There are three jugs with volumes a, b, and c liters. (a, b, and c are positive integers not greater than 200). The first and
+the second jugs are initially empty, while the third is completely filled with water. It is allowed to pour water from one jug
+into another until either the first one is empty or the second one is full. This operation can be performed zero, one, or more
+times.
+You are to write a program that computes the least total amount of water that needs to be poured so that at least one of the
+jugs contains exactly d liters of water (d is a positive integer not greater than 200). If it is not possible to measure d liters
+this way, your program should find a smaller amount of water d0 < d, which is closest to d and for which d0 liters could be
+produced. When d0 is found, your program should compute the least total amount of poured water needed to produce d0
+liters in at least one of the jugs.
+
+Input
+The first line of input contains the number of test cases. In the next T lines, T test cases follow. Each test case is given in
+one line of input containing four space-separated integers — a, b, c, and d.
+
+Output
+The output consists of two integers separated by a single space. The first integer equals the least total amount (the sum of
+all waters you pour from one jug to another) of poured water. The second integer equals d if d liters of water could be
+produced by such transformations, or equals the closest smaller value d0 that your program has found.
+"""
+
 import heapq
 
 def mind(cas,d,dprim):

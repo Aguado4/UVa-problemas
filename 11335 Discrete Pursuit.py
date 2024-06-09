@@ -2,6 +2,33 @@
 #Código 8957833
 #Fecha 2-03-2023
 
+# Task Description
+"""
+Robocops Inc. is a toy manufacturer company that develops a robot game in which a cop tries to catch a thief in a field that
+is simulated with a rectangular grid whose coordinates are denoted by pairs of integers. The resulting pursuit occurs in a
+discrete time scale: time is modeled with non-negative integers 0, 1, 2, . . ..
+An object on the grid has a speed that determines how the object moves during the simulation. A speed is modeled with a
+pair of integers. The first one is the horizontal speed and the second one is the vertical speed. Additionally, horizontal and
+vertical speeds may vary in one unit (each one) to simulate slowing or accelerating.
+More exactly: if at time k the object is at location (x, y) with speed (u, v), then, at time k + 1, the object may appear at
+location (x`, y`) = (x + u + e, y + v + δ), for some e, δ ∈ {−1, 0, 1}. The speed at time k + 1 is (x` − x, y` − y). For an object that moves with constant speed the values  and δ are always 0.
+
+At time 0, the cop is located at the origin of the grid, and the thief is at coordinates (a, 0). The thief is moving with a
+constant speed; on the other hand, the cop starts still, but may vary his speed according to the given rules. Clearly, the cop
+catches the thief at time k if at this time the positions of both coincide.
+Your task is to develop a program to control the cop in order to catch the thief in an efficient way. Your algorithm should
+determine the minimum time in which the cop may catch the thief.
+
+Input
+The problem input consists of several cases, each one defined by a line with three integer values, separated by blanks, that
+stand for the initial position a of the thief in the X-axis (0 ≤ a ≤ 1 000), the horizontal speed u (0 ≤ u ≤ 10) and the vertical
+speed v (0 ≤ v ≤ 10) at which he moves.
+
+Output
+Output texts for each input case preserve the order in the input file. For an input case, the output should be an integer that is
+the minimum time at which the cop may catch the thief.
+"""
+
 from sys import stdin
 
 def eje(a,u,v):
